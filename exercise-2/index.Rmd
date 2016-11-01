@@ -1,0 +1,18 @@
+---
+title: "Exercise 2"
+output: html_document
+---
+
+Here is my exciting, original, plot_ly chart. 
+<br />
+<br />
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(plotly)
+colors <- c('blue', 'black', 'green')
+numbers <- c(12, 16, 32)
+
+data <- data.frame(colors, numbers)
+
+plot_ly(data, x= ~colors, y= ~numbers, type='scatter')
+```
